@@ -28,25 +28,34 @@
  */
 
 using System;
+using System.Globalization;
 
-namespace Task_03 {
-	class Program {
-		const string complexRootsMessage = "complex roots";
-		static void Main(string[] args) {
-			// TODO : Сменить локаль на "ru-RU". 
+namespace Task_03
+{
+    class Program
+    {
+        const string complexRootsMessage = "complex roots";
+        static void Main(string[] args)
+        {
+            CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
 
-			double a, b, c;
-			// TODO : Считать коэффициенты.
+            double a, b, c;
+            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
+            c = double.Parse(Console.ReadLine());
 
-			double discriminant = ;
+            double discriminant = b * b - 4 * a * c;
+            double x1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
+            double x2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
 
-			// TODO : Проверить существование вещественных корней, если их нет, 
-			// записать в результирующую строку complexRootsMessage.
-			// А если корни есть, то записать их.
-			string result = ;
+            // TODO : Проверить существование вещественных корней, если их нет, 
+            // записать в результирующую строку complexRootsMessage.
+            // А если корни есть, то записать их.
+            string result = discriminant >= 0 ? $"{x1:f2}\r\n{x2:f2}" : complexRootsMessage;
 
 
-			Console.WriteLine(result);
-		}
-	}
+            Console.WriteLine(result);
+            //Console.ReadLine();
+        }
+    }
 }

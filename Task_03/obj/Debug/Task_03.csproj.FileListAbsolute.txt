@@ -1,0 +1,7 @@
+C:\Users\Алина\Source\Repos\01module-02seminar-arithmetic-operations-and-type-casts-alinarhi\Task_03\bin\Debug\Task_03.exe.config
+C:\Users\Алина\Source\Repos\01module-02seminar-arithmetic-operations-and-type-casts-alinarhi\Task_03\bin\Debug\Task_03.exe
+C:\Users\Алина\Source\Repos\01module-02seminar-arithmetic-operations-and-type-casts-alinarhi\Task_03\bin\Debug\Task_03.pdb
+C:\Users\Алина\Source\Repos\01module-02seminar-arithmetic-operations-and-type-casts-alinarhi\Task_03\obj\Debug\Task_03.csprojAssemblyReference.cache
+C:\Users\Алина\Source\Repos\01module-02seminar-arithmetic-operations-and-type-casts-alinarhi\Task_03\obj\Debug\Task_03.csproj.CoreCompileInputs.cache
+C:\Users\Алина\Source\Repos\01module-02seminar-arithmetic-operations-and-type-casts-alinarhi\Task_03\obj\Debug\Task_03.exe
+C:\Users\Алина\Source\Repos\01module-02seminar-arithmetic-operations-and-type-casts-alinarhi\Task_03\obj\Debug\Task_03.pdb

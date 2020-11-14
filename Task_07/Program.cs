@@ -26,30 +26,50 @@
  */
 
 using System;
+using System.Globalization;
 
-namespace Task_07 {
-	class Program {
-		static void Main(string[] args) {
-			// TODO : Сменить локаль на "ru-RU". 
+namespace Task_07
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // TODO : Сменить локаль на "ru-RU". 
+            CultureInfo.CurrentCulture = new CultureInfo("ru-RU");
 
-			double x;
-			// TODO : Считать вещественную переменную.
+            double x;
+            // TODO : Считать вещественную переменную.
+            x = double.Parse(Console.ReadLine());
 
-			int integer, fraction;
-			GetIntAndFract(x, out integer, out fraction);
+            int integer, fraction;
+            GetIntAndFract(x, out integer, out fraction);
 
-			double sqrt, sqr;
-			GetSqrtAndSqr(x, out sqrt, out sqr);
+            double sqrt, sqr;
+            GetSqrtAndSqr(x, out sqrt, out sqr);
 
-			// TODO : Вывести результаты.
-		}
+            // TODO : Вывести результаты.
+            if (!double.IsNaN(sqrt))
+                Console.WriteLine("{0:f2}", sqrt);
+            Console.WriteLine("{0:f2}", sqr);
+            Console.WriteLine(integer);
+            Console.WriteLine(fraction);
 
-		static void GetIntAndFract(double x, out int integer, out int fraction) {
-			// TODO : Получить целую и дробную часть числа и положить их в соответствующие переменные.
-		}
+            //Console.ReadLine();
 
-		static void GetSqrtAndSqr(double x, out double sqrt, out double sqr) {
-			// TODO : Посчитать корень и квадрат и записать их в переменные sqrt и sqr соответственно.
-		}
-	}
+        }
+
+        static void GetIntAndFract(double x, out int integer, out int fraction)
+        {
+            // TODO : Получить целую и дробную часть числа и положить их в соответствующие переменные.
+            integer = (int)x;
+            fraction = (int)(Math.Round((x - integer), 2)*100);
+        }
+
+        static void GetSqrtAndSqr(double x, out double sqrt, out double sqr)
+        {
+            // TODO : Посчитать корень и квадрат и записать их в переменные sqrt и sqr соответственно.
+            sqrt = x >= 0 ? Math.Sqrt(x) : double.NaN;
+            sqr = x * x;
+        }
+    }
 }

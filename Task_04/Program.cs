@@ -25,7 +25,7 @@ namespace Task_4 {
 		static void Main(string[] args) {
 			int x;
 			// TODO : Считать целочисленное значение.
-
+			x = int.Parse(Console.ReadLine());
 			// TODO : Вычислить значение и вывести.
 			Console.WriteLine(ReverseNumber(x));
 		}
@@ -35,8 +35,15 @@ namespace Task_4 {
 			// 1) Выделить каждую цифру в отдельную переменную и собрать их в обратном порядке.
 			// 2) Преобразовать переменную в строку использовать метод Reverse и выполнить обратное преобразование.
 			// Выбор метода остаётся за вами.
+			int first = x % 10;
+			x /= 10;
+			int second = x % 10;
+			x /= 10;
+			int third = x % 10;
+			x /= 10;
+			int fourth = x % 10;
 
-			return ;
+			return first * 1000 + second * 100 + third * 10 + fourth;
 		}
 	}
 }

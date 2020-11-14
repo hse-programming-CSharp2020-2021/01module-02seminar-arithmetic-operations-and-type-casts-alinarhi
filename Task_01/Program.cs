@@ -40,6 +40,7 @@ namespace Task_01
             x = double.Parse(Console.ReadLine());
 
             // Вычисление и вывод данных.
+            //akkkkk
             Console.WriteLine($"{Function(x):f2}");
         }
 
