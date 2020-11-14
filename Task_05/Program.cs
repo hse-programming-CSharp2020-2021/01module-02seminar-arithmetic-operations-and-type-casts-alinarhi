@@ -45,7 +45,7 @@ namespace Task_05
             a = double.Parse(Console.ReadLine());
             b = double.Parse(Console.ReadLine());
             c = double.Parse(Console.ReadLine());
-            Console.WriteLine($"{a}, {b}, {c}");
+            //Console.WriteLine($"{a}, {b}, {c}");
             // TODO : Проверить неравенство треугольника и поместить в 
             // результирующую строку notTriangleMessage 
             // или площадь треугольника.
