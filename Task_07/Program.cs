@@ -63,6 +63,8 @@ namespace Task_07
             // TODO : Получить целую и дробную часть числа и положить их в соответствующие переменные.
             integer = (int)x;
             fraction = (int)(Math.Round((x - integer), 2)*100);
+            if (fraction % 10 == 0)
+                fraction /= 10;
         }
 
         static void GetSqrtAndSqr(double x, out double sqrt, out double sqr)
