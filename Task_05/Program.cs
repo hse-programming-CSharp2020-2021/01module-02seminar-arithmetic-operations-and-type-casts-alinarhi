@@ -49,7 +49,7 @@ namespace Task_05
             // TODO : Проверить неравенство треугольника и поместить в 
             // результирующую строку notTriangleMessage 
             // или площадь треугольника.
-            string result = a < b + c && b < a + c && c < a + b
+            string result = (a < (b + c)) && (b < (a + c)) && (c < (a + b))
                 ? Square(a, b, c).ToString()
                 : notTriangleMessage;
 

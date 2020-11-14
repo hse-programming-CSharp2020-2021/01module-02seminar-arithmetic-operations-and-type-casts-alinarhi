@@ -51,7 +51,8 @@ namespace Task_03
             // TODO : Проверить существование вещественных корней, если их нет, 
             // записать в результирующую строку complexRootsMessage.
             // А если корни есть, то записать их.
-            string result = discriminant >= 0 ? $"{x1:f2}\r\n{x2:f2}" : complexRootsMessage;
+            string result = discriminant == 0 ? $"{x1:f2}" : 
+                discriminant > 0? $"{x1:f2}\r\n{x2:f2}" : complexRootsMessage;
 
 
             Console.WriteLine(result);
